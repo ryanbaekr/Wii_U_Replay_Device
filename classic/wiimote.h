@@ -12,14 +12,15 @@
  * at http://www.ccsinfo.com/forum/viewtopic.php?p=91094.  The wmgui tool that
  * comes with cwiid is good for experimenting and testing.
  *
- * Here's how to connect the Arduino to the Wiimote:
- *      Arduino    Wiimote
- *      GND        GND  (white cable)
- *      AREF       3.3V (red cable)
- *      A4         SDA  (green cable)
- *      A5         SCL  (yellow cable)
+ * Here's how to connect the Adafruit Pro Trinket 3V to the Wiimote:
+ *      Adafruit Pro Trinket 3V    Wiimote
+ *      GND                        GND  (white cable)
+ *      BAT+                       VCC  (red cable)
+ *      BAT+                       DD   (green cable)
+ *      A4                         SDA  (black cable)
+ *      A5                         SCL  (orange cable)
  *
- * It doesn't look like it's possible to power the Arduino from the Wiimote.
+ * This allows the Adafruit Pro Trinket 3V to be powered by the Wiimote.
  *
  * Note that some online instructions for using a Wiimote extension 
  * with Arduino call for changes to twi.h.  
