@@ -10,7 +10,7 @@
  * WARRANTIES, see the file, "LICENSE.txt," in this distribution.
  */
 
-#include <Wire.h> // This seems redundant, but we need to declare this
+#include "Wire.h" // This seems redundant, but we need to declare this
                   // dependency in the pde file or else it won't be included
                   // in the build.
 
@@ -69,7 +69,7 @@ void loop() {
 	 * This value is then inverted and given to variable "bdr", that represents
 	 * D-Pad RIGHT button.
 	 */
-	bdr = !digitalRead(pinRight);
+	bdr = digitalRead(pinRight);
 
 	delay(50);
 }

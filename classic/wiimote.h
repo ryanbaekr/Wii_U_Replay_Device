@@ -36,7 +36,7 @@
   #else
   #include "WProgram.h"
   #endif
-#include <Wire.h>
+#include "Wire.h"
 #include "wm_crypto.h"
 
 // Identification sequence for Classic Controller
